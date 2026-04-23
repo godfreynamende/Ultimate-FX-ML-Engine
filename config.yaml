@@ -1,0 +1,19 @@
+# config.yaml
+
+data_sources:
+  yahoo:
+    symbols:
+      - "EURUSD=X"
+      - "GBPJPY=X"
+      - "XAUUSD=X"
+    interval: "1h"   # options: 1m, 5m, 15m, 30m, 60m/1h, 1d, 1wk, 1mo
+    start: "2022-01-01"
+    end: "2026-01-01"
+
+  fred:
+    series:
+      - "DEXUSEU"   # USD/EUR exchange rate
+      - "DEXJPUS"   # USD/JPY exchange rate
+    api_key: "4f482a823c56ed0a428ded698a855532"
+    start: "2022-01-01"
+    end: "2026-01-01"
